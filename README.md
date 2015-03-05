@@ -2,15 +2,14 @@
 
 This repository is a fork of the official recipes to build Monkey on [Yocto Project](https://www.yoctoproject.org/).
 
-I only created a minimal yocto layer and moved the recipes from the official repository into it so I don't have to move stuff around as suggested but instead just add this repository in conf/bblayers.conf.
-
+I only created a minimal yocto layer and moved the recipes from the [official repository](https://github.com/monkey/monkey-yocto/) into it so I don't have to move stuff around as suggested but instead just add this repository in conf/bblayers.conf.
 
 ## Getting Started
 
 The following instructions assumes that your are building [Yocto](https://www.yoctoproject.org/) images from scratch using the [Poky](https://www.yoctoproject.org/tools-resources/projects/poky) tool, the first step is to get a copy of the [Monkey-Yocto](https://github.com/monkey/monkey-yocto) repository in your local computer:
 
 ```Shell
-$ git clone https://github.com/monkey/monkey-yocto
+$ git clone https://github.com/jpschaumloeffel/monkey-yocto
 ```
 
 then reference the __monkey-yocto/monkey__ directory in your build directory's __conf/bblayers.conf__ file:
