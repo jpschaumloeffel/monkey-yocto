@@ -1,0 +1,23 @@
+Copyright for all bitbake recipes in this layer is with their
+respective authors or copyright owners.
+
+This license covers only the work done in this fork, to reduce
+friction the Apache 2.0 license is chosen, which seems to be what
+the author of the bitbake recipes chose.
+
+
+
+Copyright 2014 Jan Schaumloeffel
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use these files except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
