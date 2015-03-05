@@ -1,6 +1,9 @@
 # Monkey + Yocto Project
 
-This repository contains the official recipes to build Monkey on [Yocto Project](https://www.yoctoproject.org/).
+This repository is a fork of the official recipes to build Monkey on [Yocto Project](https://www.yoctoproject.org/).
+
+I only created a minimal yocto layer and moved the recipes from the official repository into it so I don't have to move stuff around as suggested but instead just add this repository in conf/bblayers.conf.
+
 
 ## Getting Started
 
@@ -10,10 +13,15 @@ The following instructions assumes that your are building [Yocto](https://www.yo
 $ git clone https://github.com/monkey/monkey-yocto
 ```
 
-then copy the __monkey-yocto/monkey__ directory into your __meta/recipes-extended__ directory path:
+then reference the __monkey-yocto/monkey__ directory in your build directory's __conf/bblayers.conf__ file:
 
-```Shell
-$ cp -r monkey-yocto/monkey poky/meta/recipes-extended/
+```
+BBLAYERS ?= " \
+  ~/git/poky/meta \
+  ~/git/poky/meta-yocto \
+  ~/git/poky/meta-yocto-bsp \
+  ~/git/monkey-yocto/meta-monkey \
+  "
 ```
 
 > make sure you are using the right Poky path
